@@ -1,0 +1,43 @@
+@mixin nav {
+  &--list {
+    list-style: none;
+    display: flex;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+
+  &--item {
+    @media only screen and (max-width: $bp-small) {
+      margin: 2rem auto;
+    }
+  }
+
+  &--link {
+    &:link,
+    &:visited {
+      color: $color-white;
+      font-weight: 300;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.4s;
+      position: relative;
+    }
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 1px;
+      background-color: $color-white;
+      transition: all 0.4s;
+      display: block;
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

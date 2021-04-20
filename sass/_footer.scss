@@ -1,0 +1,39 @@
+.footer {
+  background-color: $color-primary-dark;
+  grid-column: center-start / center-end;
+  // grid-row: 8 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    :not(:last-child) {
+      margin-right: 5.5rem;
+    }
+  }
+
+  &__nav {
+    @include nav;
+    font-size: 2rem;
+
+    &--list {
+      :not(:last-child) {
+        margin-right: 13rem;
+        @media only screen and (max-width: $bp-small) {
+          margin: 2rem auto;
+        }
+      }
+    }
+  }
+}

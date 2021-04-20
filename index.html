@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AZOM PROD</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body class="container">
+    <div class="menu__container">
+      <div class="menu">
+        <nav class="menu__nav">
+          <ul class="menu__nav--list">
+            <li class="menu__nav--item">
+              <a href="#about" class="menu__nav--link">О нас</a>
+            </li>
+            <li class="menu__nav--item">
+              <a href="#steps" class="menu__nav--link">Процесс</a>
+            </li>
+            <li class="menu__nav--item">
+              <a href="#portfolio" class="menu__nav--link">Портфолио</a>
+            </li>
+            <li class="menu__nav--item">
+              <a href="#feedbacks" class="menu__nav--link">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form action="#" class="form">
+          <h3 class="heading-3 mb-middle">Заполните форму</h3>
+          <input type="text" placeholder="Имя" class="form__input" required />
+          <input
+            type="tel"
+            placeholder="Телефон"
+            class="form__input"
+            required
+          />
+          <select name="" id="" class="form__select">
+            <option value="" class="form__select--option">Фотосъемка</option>
+            <option value="" class="form__select--option">
+              Фото и Видеосъемка
+            </option>
+            <option value="" class="form__select--option">Видеосъемка</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Персональное пожелание"
+            class="form__input"
+          />
+          <button type="submit" class="form__btn">
+            Оставить заявку &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="sidebar">
+      <button class="sidebar__btn">
+        <span></span>
+      </button>
+    </div>
+    <header class="header">
+      <img
+        srcset="img/logo-1x.png 1x, img/logo-2x.png 2x"
+        alt="logo"
+        class="logo"
+      />
+      <div class="header__text">
+        <span>фото и видеосъемка</span>
+        <h1 class="heading-1">Профессиональная</h1>
+        <p class="paragraph">
+          Элитная и качественная фото и видеосъемка от команды Azom Prod,
+          <a href="#" class="btn">закажи прямо сейчас.</a>
+        </p>
+      </div>
+
+      <svg class="header__icon">
+        <use xlink:href="img/sprite.svg#down"></use>
+      </svg>
+
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="img/video.mp4" type="video/mp4" />
+          <!-- <source src="img/video.webm" type="video/webm" /> -->
+          Your browser is not supported!
+        </video>
+      </div>
+    </header>
+    <div class="about" id="about">
+      <h2 class="heading-2 mb-big">О нас</h2>
+      <div class="about__container">
+        <div class="about__item">
+          <svg class="about__icon">
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <h4 class="heading-4">безупречная репутация</h4>
+          <p class="paragraph">
+            Наши клиенты всегда довольны и оставляют только самые положительные
+            отзывы
+          </p>
+        </div>
+
+        <div class="about__item">
+          <svg class="about__icon">
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <h4 class="heading-4">креативный подход</h4>
+          <p class="paragraph">
+            Мы всегда подходим к работе с интересными идеями и подбираем лучшие
+            ракурсы
+          </p>
+        </div>
+
+        <div class="about__item">
+          <svg class="about__icon">
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <h4 class="heading-4">лучшие цены</h4>
+          <p class="paragraph">
+            Наша ценовая политика одна из самых оптимальных на рынке
+          </p>
+        </div>
+
+        <div class="about__item">
+          <svg class="about__icon">
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <h4 class="heading-4">кротчайшие сроки</h4>
+          <p class="paragraph">
+            Мы уважаем ваше время, поэтому всегда предоставляем готовый фото и
+            видео быстро
+          </p>
+        </div>
+
+        <div class="about__item">
+          <svg class="about__icon">
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <h4 class="heading-4">молодая команда</h4>
+          <p class="paragraph">
+            У нас работают молодые профессионалы, которые всегда мотивированы на
+            результат
+          </p>
+        </div>
+
+        <div class="about__item">
+          <svg class="about__icon">
+            <use xlink:href="img/sprite.svg#star"></use>
+          </svg>
+          <h4 class="heading-4">элитное оборудование</h4>
+          <p class="paragraph">Мы снимаем только на профессиональные камеры</p>
+        </div>
+      </div>
+    </div>
+    <div class="steps" id="steps">
+      <div class="steps__container">
+        <button
+          class="steps__btn steps__btn--1 active--btn"
+          data-tab="steps__content--1"
+        >
+          01 Заявка
+        </button>
+        <button class="steps__btn steps__btn--2" data-tab="steps__content--2">
+          02 фотосессия
+        </button>
+        <button class="steps__btn steps__btn--3" data-tab="steps__content--3">
+          03 результат
+        </button>
+        <div class="steps__content steps__content--1 active--content">
+          <h3 class="heading-3">Оставляете заявку</h3>
+          <p class="paragraph">
+            Наша команда свяжется с вами в кротчайшие сроки, согласует дату
+            съемки, утвердит бюджет и начнет подготовку к съемке. Мы учтем все
+            ваши пожелания по тематике, подберем необходимую локацию, или
+            арендуем студию, соберем все оборудование и с нетерпением будем
+            ждать день съемки.
+          </p>
+          <a href="#" class="btn">Оставить заявку &rarr;</a>
+        </div>
+
+        <div class="steps__content steps__content--2">
+          <h3 class="heading-3">фотосессия</h3>
+          <p class="paragraph">
+            Мы встречаемся с вами в назначенные день и время. Если это
+            фотосессия, то мы переходим от локации к локации, или же делаем
+            студийные снимки. В случае корпоративной съемки, мы запечатляем
+            лучшие моменты мероприятия.
+          </p>
+          <a href="#" class="btn">Оставить заявку &rarr;</a>
+        </div>
+
+        <div class="steps__content steps__content--3">
+          <h3 class="heading-3">Результат</h3>
+          <p class="paragraph">
+            В течении одного-двух дней мы отбираем и редактируем весь снятый
+            материал, после чего предоставляем его вам.
+          </p>
+          <a href="#" class="btn">Оставить заявку &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <div class="studio" id="portfolio">
+      <h2 class="heading-2 mb-big">Студийная съемка</h2>
+      <div class="gallery mb-big">
+        <div class="gallery__item gallery__item--1">
+          <img
+            srcset="img/studio-1-1x.jpg 1x, img/studio-1-2x.jpg 2x"
+            alt="Photo 1"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--2">
+          <img
+            srcset="img/studio-2-1x.jpg 1x, img/studio-2-2x.jpg 2x"
+            alt="Photo 2"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--3">
+          <img
+            srcset="img/studio-3-1x.jpg 1x, img/studio-3-2x.jpg 2x"
+            alt="Photo 3"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--4">
+          <img
+            srcset="img/studio-4-1x.jpg 1x, img/studio-4-2x.jpg 2x"
+            alt="Photo 4"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--5">
+          <img
+            srcset="img/studio-5-1x.jpg 1x, img/studio-5-2x.jpg 2x"
+            alt="Photo 5"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--6">
+          <img
+            srcset="img/studio-6-1x.jpg 1x, img/studio-6-2x.jpg 2x"
+            alt="Photo 6"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--7">
+          <img
+            srcset="img/studio-7-1x.jpg 1x, img/studio-7-2x.jpg 2x"
+            alt="Photo 7"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--8">
+          <img
+            srcset="img/studio-8-1x.jpg 1x, img/studio-8-2x.jpg 2x"
+            alt="Photo 8"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--9">
+          <img
+            srcset="img/studio-9-1x.jpg 1x, img/studio-9-2x.jpg 2x"
+            alt="Photo 9"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--10">
+          <img
+            srcset="img/studio-10-1x.jpg 1x, img/studio-10-2x.jpg 2x"
+            alt="Photo 10"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--11">
+          <img
+            srcset="img/studio-11-1x.jpg 1x, img/studio-11-2x.jpg 2x"
+            alt="Photo 11"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--12">
+          <img
+            srcset="img/studio-12-1x.jpg 1x, img/studio-12-2x.jpg 2x"
+            alt="Photo 12"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--13">
+          <img
+            srcset="img/studio-13-1x.jpg 1x, img/studio-13-2x.jpg 2x"
+            alt="Photo 13"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--14">
+          <img
+            srcset="img/studio-14-1x.jpg 1x, img/studio-14-2x.jpg 2x"
+            alt="Photo 14"
+            class="gallery__img"
+          />
+        </div>
+      </div>
+      <a href="#" class="btn">Оставить заявку &rarr;</a>
+    </div>
+    <div class="corporative">
+      <h2 class="heading-2 mb-big">Корпоративная съемка</h2>
+
+      <div class="gallery gallery--middle mb-big">
+        <div class="gallery__item gallery__item--1">
+          <img
+            srcset="img/corp-1-1x.jpg 1x, img/corp-1-2x.jpg 2x"
+            alt="Photo 1"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--2">
+          <img
+            srcset="img/corp-2-1x.jpg 1x, img/corp-2-2x.jpg 2x"
+            alt="Photo 2"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--3">
+          <img
+            srcset="img/corp-3-1x.jpg 1x, img/corp-3-2x.jpg 2x"
+            alt="Photo 3"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--4">
+          <img
+            srcset="img/corp-4-1x.jpg 1x, img/corp-4-2x.jpg 2x"
+            alt="Photo 4"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--5">
+          <img
+            srcset="img/corp-5-1x.jpg 1x, img/corp-5-2x.jpg 2x"
+            alt="Photo 5"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--6">
+          <img
+            srcset="img/corp-6-1x.jpg 1x, img/corp-6-2x.jpg 2x"
+            alt="Photo 6"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--7">
+          <img
+            srcset="img/corp-7-1x.jpg 1x, img/corp-7-2x.jpg 2x"
+            alt="Photo 7"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--8">
+          <img
+            srcset="img/corp-8-1x.jpg 1x, img/corp-8-2x.jpg 2x"
+            alt="Photo 8"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--9">
+          <img
+            srcset="img/corp-9-1x.jpg 1x, img/corp-9-2x.jpg 2x"
+            alt="Photo 9"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--10">
+          <img
+            srcset="img/corp-10-1x.jpg 1x, img/corp-10-2x.jpg 2x"
+            alt="Photo 10"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--11">
+          <img
+            srcset="img/corp-11-1x.jpg 1x, img/corp-11-2x.jpg 2x"
+            alt="Photo 11"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--12">
+          <img
+            srcset="img/corp-12-1x.jpg 1x, img/corp-12-2x.jpg 2x"
+            alt="Photo 12"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--13">
+          <img
+            srcset="img/corp-13-1x.jpg 1x, img/corp-13-2x.jpg 2x"
+            alt="Photo 13"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--14">
+          <img
+            srcset="img/corp-14-1x.jpg 1x, img/corp-14-2x.jpg 2x"
+            alt="Photo 14"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--15">
+          <img
+            srcset="img/corp-15-1x.jpg 1x, img/corp-15-2x.jpg 2x"
+            alt="Photo 15"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--16">
+          <img
+            srcset="img/corp-16-1x.jpg 1x, img/corp-16-2x.jpg 2x"
+            alt="Photo 16"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--17">
+          <img
+            srcset="img/corp-17-1x.jpg 1x, img/corp-17-2x.jpg 2x"
+            alt="Photo 17"
+            class="gallery__img"
+          />
+        </div>
+      </div>
+
+      <a href="#" class="btn">Оставить заявку &rarr;</a>
+    </div>
+    <div class="personal">
+      <h2 class="heading-2 mb-big">Персональная съемка</h2>
+      <div class="gallery mb-big">
+        <div class="gallery__item gallery__item--1">
+          <img
+            srcset="img/pers-1-1x.jpg 1x, img/pers-1-2x.jpg 2x"
+            alt="Photo 1"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--2">
+          <img
+            srcset="img/pers-2-1x.jpg 1x, img/pers-2-2x.jpg 2x"
+            alt="Photo 2"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--3">
+          <img
+            srcset="img/pers-3-1x.jpg 1x, img/pers-3-2x.jpg 2x"
+            alt="Photo 3"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--4">
+          <img
+            srcset="img/pers-4-1x.jpg 1x, img/pers-4-2x.jpg 2x"
+            alt="Photo 4"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--5">
+          <img
+            srcset="img/pers-5-1x.jpg 1x, img/pers-5-2x.jpg 2x"
+            alt="Photo 5"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--6">
+          <img
+            srcset="img/pers-6-1x.jpg 1x, img/pers-6-2x.jpg 2x"
+            alt="Photo 6"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--7">
+          <img
+            srcset="img/pers-7-1x.jpg 1x, img/pers-7-2x.jpg 2x"
+            alt="Photo 7"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--8">
+          <img
+            srcset="img/pers-8-1x.jpg 1x, img/pers-8-2x.jpg 2x"
+            alt="Photo 8"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--9">
+          <img
+            srcset="img/pers-9-1x.jpg 1x, img/pers-9-2x.jpg 2x"
+            alt="Photo 9"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--10">
+          <img
+            srcset="img/pers-10-1x.jpg 1x, img/pers-10-2x.jpg 2x"
+            alt="Photo 10"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--11">
+          <img
+            srcset="img/pers-11-1x.jpg 1x, img/pers-11-2x.jpg 2x"
+            alt="Photo 11"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--12">
+          <img
+            srcset="img/pers-12-1x.jpg 1x, img/pers-12-2x.jpg 2x"
+            alt="Photo 12"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--13">
+          <img
+            srcset="img/pers-13-1x.jpg 1x, img/pers-13-2x.jpg 2x"
+            alt="Photo 13"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--14">
+          <img
+            srcset="img/pers-14-1x.jpg 1x, img/pers-14-2x.jpg 2x"
+            alt="Photo 14"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--15">
+          <img
+            srcset="img/pers-15-1x.jpg 1x, img/pers-15-2x.jpg 2x"
+            alt="Photo 15"
+            class="gallery__img"
+          />
+        </div>
+        <div class="gallery__item gallery__item--16">
+          <img
+            srcset="img/pers-16-1x.jpg 1x, img/pers-16-2x.jpg 2x"
+            alt="Photo 16"
+            class="gallery__img"
+          />
+        </div>
+      </div>
+      <a href="#" class="btn">Оставить заявку &rarr;</a>
+    </div>
+    <div class="feedbacks" id="feedbacks">
+      <h2 class="heading-2 mb-big">Наши клиенты всегда довольны</h2>
+      <div class="feedbacks__container">
+        <div class="feedbacks__content">
+          <div class="feedbacks__slide feedbacks__slide--1">
+            <img
+              srcset="img/feedback-1-1x.jpg 1x, img/feedback-1-2x.jpg 2x"
+              alt="Person 1"
+              class="feedbacks__img"
+            />
+            <h4 class="heading-4">мария павлусенко</h4>
+            <p class="paragraph">
+              Ребята из Azom настоящие профессионалы! Во время фотосессии они
+              давали свои советы и рекомендации по-поводу позирования. Я очень
+              довольна своей фотосессией и красивыми фотографиями.
+            </p>
+          </div>
+
+          <div class="feedbacks__slide feedbacks__slide--2">
+            <img
+              srcset="img/feedback-2-1x.jpg 1x, img/feedback-2-2x.jpg 2x"
+              alt="Person 1"
+              class="feedbacks__img"
+            />
+            <h4 class="heading-4">илья явдошляр</h4>
+            <p class="paragraph">
+              Я получил эстетическое наслаждение удовольствие от фотосессии.
+              Ребята посоветовали красивые локации и делали фотографии с разных
+              ракурсов. Теперь мой инстаграм наполнен прекрасными снимками.
+            </p>
+          </div>
+
+          <div class="feedbacks__slide feedbacks__slide--3">
+            <img
+              srcset="img/feedback-3-1x.jpg 1x, img/feedback-3-2x.jpg 2x"
+              alt="Person 1"
+              class="feedbacks__img"
+            />
+            <h4 class="heading-4">георгий грабарь</h4>
+            <p class="paragraph">
+              Мы заказывали фото и видеосъемку нашего корпоратива. За работой
+              парней было приятно наблюдать, а в результате мы получили
+              оригинальный и динамичный ролик.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="feedbacks__buttons">
+        <button class="feedbacks__btn">
+          <span class="btn__left">&larr;</span>
+        </button>
+        <span class="feedbacks__counter">01 / 03</span>
+        <button class="feedbacks__btn">
+          <span class="btn__right">&rarr;</span>
+        </button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__socials mb-big">
+        <a href="https://m.facebook.com/azomprodpage/" target="_blank">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#fb"></use>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.youtube.com/channel/UCGJfXRkpV7xpoSljxlyejhQ"
+          target="_blank"
+        >
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#yt"></use>
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/azom_prod/?hl=ru" target="_blank">
+          <svg class="footer__icon">
+            <use xlink:href="img/sprite.svg#inst"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="footer__nav mb-big">
+        <ul class="footer__nav--list">
+          <li class="footer__nav--item">
+            <a href="#about" class="footer__nav--link">О нас</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="#steps" class="footer__nav--link">Процесс</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="#portfolio" class="footer__nav--link">Портфолио</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="#feedbacks" class="footer__nav--link">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="credits">
+        2021 Created for Azom Prod by Dmytro Sereda All rights reserved
+      </p>
+    </footer>
+    <div class="popup hidden">
+      <button class="popup__close"><span></span></button>
+      <img
+        srcset="img/pop-up-1x.jpg 1x, img/pop-up-2x.jpg 2x"
+        alt="Girl"
+        class="popup__img"
+      />
+      <h3 class="heading-3 mb-middle">Заполните форму</h3>
+      <form action="#" class="form">
+        <input type="text" placeholder="Имя" class="form__input" required />
+        <input type="tel" placeholder="Телефон" class="form__input" required />
+        <select name="" id="" class="form__select">
+          <option value="" class="form__select--option">Фотосъемка</option>
+          <option value="" class="form__select--option">Видеосъемка</option>
+          <option value="" class="form__select--option">
+            Фото и Видеосъемка
+          </option>
+        </select>
+        <input
+          type="text"
+          placeholder="Персональное пожелание"
+          class="form__input"
+        />
+        <button type="submit" class="form__btn">Оставить заявку &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

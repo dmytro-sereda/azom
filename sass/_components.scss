@@ -1,0 +1,106 @@
+.btn {
+  &:link,
+  &:visited {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 300;
+    padding: 0.7rem 0.5rem;
+    display: inline-block;
+    border-bottom: 1px solid $color-white;
+    transition: all 0.3s;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary-dark;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  // Custom arrow
+  &__select {
+    -webkit-appearance: none;
+    background: url('../img/arrow.svg') no-repeat right;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-medium) {
+      background: url('../img/arrow-small.svg') no-repeat right;
+    }
+  }
+
+  // Styling inputs
+  &__input,
+  &__select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    // border-bottom: 2px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    color: $color-white;
+    font-weight: 300;
+    font-family: 'GTWalsheimPro', sans-serif;
+    width: 32rem;
+    transition: all 0.1s;
+    box-sizing: content-box;
+    margin-bottom: 3rem;
+
+    &:invalid {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+
+      &:invalid {
+        border-bottom: 1px solid $color-secondary;
+        color: $color-secondary;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__input::placeholder {
+    // font-size: 2rem;
+    opacity: 1;
+  }
+
+  // Styling btn
+  &__btn {
+    display: inline-block;
+    color: $color-white;
+    background-color: transparent;
+    // outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 300;
+    padding: 0.7rem 0.5rem;
+    border-bottom: 1px solid $color-white;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-family: 'GTWalsheimPro', sans-serif;
+    &:hover {
+      background-color: $color-white;
+      color: $color-primary-dark;
+    }
+  }
+}
+
+.credits {
+  font-weight: 300;
+  font-size: 2rem;
+  color: $color-white;
+  max-width: 42rem;
+  text-align: center;
+}

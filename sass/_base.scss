@@ -1,0 +1,80 @@
+// COLORS
+$color-primary-dark: #333;
+$color-primary-light: #434343;
+$color-grey-dark: #4b4b4b;
+$color-grey-light: #606060;
+$color-white: #fff;
+$color-secondary: #f24c4c;
+
+// SHADOWS
+$shadow-primary: 0 1rem 2rem rgba(#000, 0.2);
+$shadow-light: 0 1rem 1rem rgba(#000, 0.1);
+
+// MEDIA
+$bp-large: 96.25em;
+$bp-big: 62.5em;
+$bp-medium: 50em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-big) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 37.5%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 25%;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns:
+    [sidebar-start] 10rem [sidebar-end full-start] 1fr [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 18rem) [col-end]
+    )
+    [center-end] 1fr [full-end];
+  grid-template-rows: 100vh repeat(7, min-content);
+  background-color: $color-primary-dark;
+  font-family: 'GTWalsheimPro', sans-serif;
+
+  & > *:not(.sidebar):not(.popup) {
+    padding: 4.5rem 0;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns:
+      [full-start] 1fr [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 18rem) [col-end]
+      )
+      [center-end] 1fr [full-end];
+    grid-template-rows: 9.5rem 100vh repeat(7, min-content);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns:
+      [full-start] 1fr [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 18rem) [col-end]
+      )
+      [center-end] 1fr [full-end];
+    grid-template-rows: 12rem 100vh repeat(7, min-content);
+  }
+}
