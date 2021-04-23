@@ -18,6 +18,9 @@
   grid-template-rows: repeat(2, min-content) 1fr;
   z-index: 1000;
   transition: all 0.4s;
+  @media only screen and (max-width: $bp-smallest) {
+    width: 90%;
+  }
 
   &__close {
     grid-column: 2 / 3;

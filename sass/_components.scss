@@ -29,6 +29,11 @@
     background: url('../img/arrow.svg') no-repeat right;
     cursor: pointer;
 
+    option {
+      background-color: $color-primary-dark;
+      color: $color-white;
+    }
+
     @media only screen and (max-width: $bp-medium) {
       background: url('../img/arrow-small.svg') no-repeat right;
     }

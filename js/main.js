@@ -147,8 +147,13 @@ function controlSlider() {
 function controlMenu() {
   menuBtn.addEventListener('click', function (e) {
     e.preventDefault();
+    // Open menu and change button
     menuBtn.classList.toggle('active--menu__btn');
     menu.classList.toggle('active--menu');
+
+    // Close popup if needed
+    popup.classList.add('hidden');
+    overlay.classList.add('hidden');
   });
 }
 
