@@ -9,6 +9,10 @@
     grid-row-gap: 9rem;
     justify-content: center;
     align-items: start;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(auto-fit, minmax(min-content, 50rem));
+    }
   }
 
   &__item {
@@ -23,6 +27,10 @@
 
     .heading-4 {
       width: 63%;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+      }
     }
   }
 

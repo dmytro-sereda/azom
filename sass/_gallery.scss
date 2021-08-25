@@ -13,6 +13,12 @@
     grid-gap: 2rem;
   }
 
+  @media only screen and (max-width: $bp-extra-small) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+
   &--middle {
     grid-column: center-start / center-end;
     grid-row: 2 / 3;
@@ -21,6 +27,10 @@
   &__item {
     overflow: hidden;
     background: $color-primary-light;
+
+    @media only screen and (max-width: $bp-extra-small) {
+      margin-top: 2rem;
+    }
   }
 
   &__img {

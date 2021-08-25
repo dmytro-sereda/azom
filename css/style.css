@@ -241,6 +241,9 @@ html {
     grid-row-gap: 9rem;
     justify-content: center;
     align-items: start; }
+    @media only screen and (max-width: 37.5em) {
+      .about__container {
+        grid-template-columns: repeat(auto-fit, minmax(min-content, 50rem)); } }
   .about__item {
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -250,6 +253,9 @@ html {
       align-self: start; }
     .about__item .heading-4 {
       width: 63%; }
+      @media only screen and (max-width: 37.5em) {
+        .about__item .heading-4 {
+          width: 100%; } }
   .about__icon {
     width: 4.5rem;
     height: 4.5rem;
@@ -393,12 +399,20 @@ html {
   @media only screen and (max-width: 50em) {
     .gallery {
       grid-gap: 2rem; } }
+  @media only screen and (max-width: 25em) {
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      padding: 0 3rem; } }
   .gallery--middle {
     grid-column: center-start / center-end;
     grid-row: 2 / 3; }
   .gallery__item {
     overflow: hidden;
     background: #434343; }
+    @media only screen and (max-width: 25em) {
+      .gallery__item {
+        margin-top: 2rem; } }
   .gallery__img {
     width: 100%;
     height: 100%;
@@ -649,6 +663,10 @@ html {
   .footer__icon {
     width: 2.4rem;
     height: 2.4rem; }
+    @media only screen and (max-width: 25em) {
+      .footer__icon {
+        width: 4rem;
+        height: 4rem; } }
     .footer__icon:not(:last-child) {
       margin-right: 4rem; }
   .footer__socials {
@@ -712,7 +730,13 @@ html {
   transition: all 0.4s; }
   @media only screen and (max-width: 31.25em) {
     .popup {
-      width: 90%; } }
+      width: 90%;
+      height: 47rem; } }
+  @media only screen and (max-width: 25em) {
+    .popup {
+      grid-template-columns: 1fr;
+      width: 50%;
+      top: 30%; } }
   .popup__close {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -724,6 +748,10 @@ html {
     outline: none;
     cursor: pointer;
     margin: 1.4rem 1.8rem 2rem 0; }
+    @media only screen and (max-width: 25em) {
+      .popup__close {
+        grid-column: 1 / 2;
+        margin: 0rem 2rem 2rem 0; } }
     .popup__close span {
       width: 2.5rem;
       height: 1px;
@@ -744,14 +772,36 @@ html {
   .popup__img {
     width: 100%;
     grid-column: 1 / 2;
-    grid-row: 1 / -1; }
+    grid-row: 1 / -1;
+    display: block; }
+    @media only screen and (max-width: 31.25em) {
+      .popup__img {
+        height: 100%;
+        width: auto; } }
+    @media only screen and (max-width: 25em) {
+      .popup__img {
+        grid-row: auto;
+        width: 100%;
+        margin-top: 4rem; } }
   .popup .form {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     margin-left: 3rem; }
+    @media only screen and (max-width: 25em) {
+      .popup .form {
+        grid-column: 1 / 2;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 2rem; } }
   .popup .heading-3 {
     grid-row: 2 / 3;
     margin-left: 3rem; }
+    @media only screen and (max-width: 25em) {
+      .popup .heading-3 {
+        grid-column: 1 / 2;
+        text-align: center;
+        margin: 0;
+        margin-top: 2rem; } }
 
 .menu {
   display: flex;

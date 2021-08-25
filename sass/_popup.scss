@@ -18,8 +18,16 @@
   grid-template-rows: repeat(2, min-content) 1fr;
   z-index: 1000;
   transition: all 0.4s;
+
   @media only screen and (max-width: $bp-smallest) {
     width: 90%;
+    height: 47rem;
+  }
+
+  @media only screen and (max-width: $bp-extra-small) {
+    grid-template-columns: 1fr;
+    width: 50%;
+    top: 30%;
   }
 
   &__close {
@@ -33,6 +41,11 @@
     outline: none;
     cursor: pointer;
     margin: 1.4rem 1.8rem 2rem 0;
+
+    @media only screen and (max-width: $bp-extra-small) {
+      grid-column: 1 / 2;
+      margin: 0rem 2rem 2rem 0;
+    }
 
     span {
       width: 2.5rem;
@@ -60,16 +73,42 @@
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    display: block;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 100%;
+      width: auto;
+    }
+
+    @media only screen and (max-width: $bp-extra-small) {
+      grid-row: auto;
+      width: 100%;
+      margin-top: 4rem;
+    }
   }
 
   .form {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-extra-small) {
+      grid-column: 1 / 2;
+      align-items: center;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
   }
 
   .heading-3 {
     grid-row: 2 / 3;
     margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-extra-small) {
+      grid-column: 1 / 2;
+      text-align: center;
+      margin: 0;
+      margin-top: 2rem;
+    }
   }
 }
