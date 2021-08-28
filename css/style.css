@@ -261,7 +261,8 @@ html {
     grid-column-gap: 6rem;
     grid-row-gap: 9rem;
     justify-content: center;
-    align-items: start; }
+    align-items: start;
+    padding: 2rem; }
     @media only screen and (max-width: 37.5em) {
       .about__container {
         grid-template-columns: repeat(auto-fit, minmax(min-content, 50rem)); } }
