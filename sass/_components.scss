@@ -10,6 +10,10 @@
     border-bottom: 1px solid $color-white;
     transition: all 0.3s;
     margin: 0 auto;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 4rem;
+    }
   }
 
   &:hover {
@@ -108,4 +112,8 @@
   color: $color-white;
   max-width: 42rem;
   text-align: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 4rem;
+  }
 }

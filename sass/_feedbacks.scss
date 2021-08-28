@@ -36,6 +36,11 @@
     @media only screen and (max-width: $bp-medium) {
       grid-row-gap: 6rem;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 2rem;
+      height: 26rem;
+    }
   }
 
   // SLIDES

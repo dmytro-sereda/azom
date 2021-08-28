@@ -26,6 +26,10 @@
     @include nav;
     font-size: 3rem;
 
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100%;
+    }
+
     &--list {
       flex-direction: column;
       border-right: 1px solid $color-white;
@@ -37,12 +41,16 @@
         margin: 0 auto;
         margin-right: 0;
         padding: 0 0 4rem 0;
-        width: 45rem;
+        // width: 45rem;
       }
     }
 
     &--item:not(:last-child) {
       margin-bottom: 6rem;
+
+      @media only screen and (max-width: $bp-smallest) {
+        margin-bottom: 4rem;
+      }
     }
 
     @media only screen and (max-width: $bp-smallest) {

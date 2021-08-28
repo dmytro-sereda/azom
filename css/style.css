@@ -36,28 +36,28 @@ html {
       grid-template-rows: 12rem 100vh repeat(7, min-content); } }
 
 @font-face {
-  font-family: "GTWalsheimPro";
+  font-family: 'GTWalsheimPro';
   src: url("../fonts/GTWalsheimPro-Black.eot");
   src: url("../fonts/GTWalsheimPro-Black.eot") format("embedded-opentype"), url("../fonts/GTWalsheimPro-Black.woff") format("woff"), url("../fonts/GTWalsheimPro-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 700; }
 
 @font-face {
-  font-family: "GTWalsheimPro";
+  font-family: 'GTWalsheimPro';
   src: url("../fonts/GTWalsheimPro-Bold.eot");
   src: url("../fonts/GTWalsheimPro-Bold.eot") format("embedded-opentype"), url("../fonts/GTWalsheimPro-Bold.woff") format("woff"), url("../fonts/GTWalsheimPro-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600; }
 
 @font-face {
-  font-family: "GTWalsheimPro";
+  font-family: 'GTWalsheimPro';
   src: url("../fonts/GTWalsheimPro-Medium.eot");
   src: url("../fonts/GTWalsheimPro-Medium.eot") format("embedded-opentype"), url("../fonts/GTWalsheimPro-Medium.woff") format("woff"), url("../fonts/GTWalsheimPro-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 400; }
 
 @font-face {
-  font-family: "GTWalsheimPro";
+  font-family: 'GTWalsheimPro';
   src: url("../fonts/GTWalsheimPro-Light.eot");
   src: url("../fonts/GTWalsheimPro-Light.eot") format("embedded-opentype"), url("../fonts/GTWalsheimPro-Light.woff") format("woff"), url("../fonts/GTWalsheimPro-Light.ttf") format("truetype");
   font-style: normal;
@@ -72,21 +72,36 @@ html {
   text-align: center;
   font-size: 6rem;
   font-weight: 700; }
+  @media only screen and (max-width: 31.25em) {
+    .heading-1 {
+      font-size: 7rem; } }
 
 .heading-2 {
   text-align: center;
   font-size: 4.5rem; }
+  @media only screen and (max-width: 31.25em) {
+    .heading-2 {
+      font-size: 6.3rem; } }
 
 .heading-3 {
   font-size: 3rem; }
+  @media only screen and (max-width: 31.25em) {
+    .heading-3 {
+      font-size: 5.3rem; } }
 
 .heading-4 {
   font-size: 2.4rem; }
+  @media only screen and (max-width: 31.25em) {
+    .heading-4 {
+      font-size: 4.3rem; } }
 
 .paragraph {
   font-size: 2rem;
   color: #fff;
   font-weight: 300; }
+  @media only screen and (max-width: 31.25em) {
+    .paragraph {
+      font-size: 4rem; } }
 
 .btn:link, .btn:visited {
   color: #fff;
@@ -98,6 +113,9 @@ html {
   border-bottom: 1px solid #fff;
   transition: all 0.3s;
   margin: 0 auto; }
+  @media only screen and (max-width: 31.25em) {
+    .btn:link, .btn:visited {
+      font-size: 4rem; } }
 
 .btn:hover {
   background-color: #fff;
@@ -167,6 +185,9 @@ html {
   color: #fff;
   max-width: 42rem;
   text-align: center; }
+  @media only screen and (max-width: 31.25em) {
+    .credits {
+      font-size: 4rem; } }
 
 .mb-big {
   margin-bottom: 6rem; }
@@ -399,7 +420,7 @@ html {
   @media only screen and (max-width: 50em) {
     .gallery {
       grid-gap: 2rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 31.25em) {
     .gallery {
       display: flex;
       flex-direction: column;
@@ -410,7 +431,7 @@ html {
   .gallery__item {
     overflow: hidden;
     background: #434343; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 31.25em) {
       .gallery__item {
         margin-top: 2rem; } }
   .gallery__img {
@@ -614,6 +635,10 @@ html {
     @media only screen and (max-width: 50em) {
       .feedbacks__container {
         grid-row-gap: 6rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .feedbacks__container {
+        padding: 2rem;
+        height: 26rem; } }
   .feedbacks__content {
     position: relative;
     grid-row: 1 / 2; }
@@ -703,6 +728,9 @@ html {
       left: 0; }
     .footer__nav--link:hover::after {
       width: 100%; }
+    @media only screen and (max-width: 31.25em) {
+      .footer__nav {
+        font-size: 4rem; } }
     .footer__nav--list :not(:last-child) {
       margin-right: 13rem; }
       @media only screen and (max-width: 37.5em) {
@@ -714,7 +742,8 @@ html {
   width: 100%;
   height: 100vh;
   position: fixed;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  z-index: 502; }
 
 .popup {
   position: fixed;
@@ -732,11 +761,11 @@ html {
     .popup {
       width: 90%;
       height: 47rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 31.25em) {
     .popup {
       grid-template-columns: 1fr;
-      width: 50%;
-      top: 30%; } }
+      top: 30%;
+      height: 50%; } }
   .popup__close {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -748,10 +777,9 @@ html {
     outline: none;
     cursor: pointer;
     margin: 1.4rem 1.8rem 2rem 0; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 31.25em) {
       .popup__close {
-        grid-column: 1 / 2;
-        margin: 0rem 2rem 2rem 0; } }
+        grid-column: 1 / 2; } }
     .popup__close span {
       width: 2.5rem;
       height: 1px;
@@ -773,21 +801,23 @@ html {
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    display: block; }
+    display: block;
+    object-fit: cover; }
     @media only screen and (max-width: 31.25em) {
       .popup__img {
         height: 100%;
         width: auto; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 31.25em) {
       .popup__img {
         grid-row: auto;
         width: 100%;
+        height: 40rem;
         margin-top: 4rem; } }
   .popup .form {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     margin-left: 3rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 31.25em) {
       .popup .form {
         grid-column: 1 / 2;
         align-items: center;
@@ -796,7 +826,7 @@ html {
   .popup .heading-3 {
     grid-row: 2 / 3;
     margin-left: 3rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 31.25em) {
       .popup .heading-3 {
         grid-column: 1 / 2;
         text-align: center;
@@ -853,6 +883,9 @@ html {
       left: 0; }
     .menu__nav--link:hover::after {
       width: 100%; }
+    @media only screen and (max-width: 31.25em) {
+      .menu__nav {
+        width: 100%; } }
     .menu__nav--list {
       flex-direction: column;
       border-right: 1px solid #fff;
@@ -864,10 +897,12 @@ html {
           border-right: none;
           margin: 0 auto;
           margin-right: 0;
-          padding: 0 0 4rem 0;
-          width: 45rem; } }
+          padding: 0 0 4rem 0; } }
     .menu__nav--item:not(:last-child) {
       margin-bottom: 6rem; }
+      @media only screen and (max-width: 31.25em) {
+        .menu__nav--item:not(:last-child) {
+          margin-bottom: 4rem; } }
     @media only screen and (max-width: 31.25em) {
       .menu__nav {
         margin-bottom: 4rem; } }

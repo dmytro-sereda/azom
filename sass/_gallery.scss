@@ -13,7 +13,7 @@
     grid-gap: 2rem;
   }
 
-  @media only screen and (max-width: $bp-extra-small) {
+  @media only screen and (max-width: $bp-smallest) {
     display: flex;
     flex-direction: column;
     padding: 0 3rem;
@@ -28,7 +28,7 @@
     overflow: hidden;
     background: $color-primary-light;
 
-    @media only screen and (max-width: $bp-extra-small) {
+    @media only screen and (max-width: $bp-smallest) {
       margin-top: 2rem;
     }
   }

@@ -32,6 +32,10 @@
     @include nav;
     font-size: 2rem;
 
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 4rem;
+    }
+
     &--list {
       :not(:last-child) {
         margin-right: 13rem;
