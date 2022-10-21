@@ -10,7 +10,7 @@
     padding: 2rem;
 
     @media only screen and (max-width: $bp-small) {
-      grid-template-columns: repeat(auto-fit, minmax(min-content, 50rem));
+      grid-template-columns: repeat(auto-fit, minmax(min-content, 100%));
     }
   }
 

@@ -86,9 +86,11 @@ function controlNav() {
 
 // CONTROL SLIDER
 function goToSlide(slide) {
-  slides.forEach(
-    (s, i) => (s.style.transform = `translateX(${(i - slide) * 110}%)`)
-  );
+  slides.forEach((s, i) => {
+    s.style.transform = `translateX(${(i - slide) * 110}%)`;
+    s.classList.remove('active-slide');
+    if (i === slide) s.classList.add('active-slide');
+  });
 }
 
 function nextSlide() {
